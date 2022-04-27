@@ -27,25 +27,41 @@
 
 
 
-print(" BIENVENIDO AL PROGRAMA DE OPERACIONES ARITMETICAS ➕➖➗")
+print(" BIENVENIDO AL PROGRAMA DE OPERACIONES ARITMETICAS ➕ ➖ ➗")
 
 def sumar(a, b):
-    print('La suma de' + a + ' y ' + b + ' es:')
+    a = str(a)
+    b = str(b)
+    print('La suma de ' + a + ' y ' + b + ' es:')
+    a = int(a)
+    b = int(b)
     result = a + b
     print(result)
 
 def restar(a, b):
-    print('La resta de' + a + ' y ' + b + ' es:')
+    a = str(a)
+    b = str(b)
+    print('La resta de ' + a + ' y ' + b + ' es:')
+    a = int(a)
+    b = int(b)
     result = a - b
     print(result)
 
 def multiplicar(a, b):
-    print('El producto de' + a + ' y ' + b + ' es:')
+    a = str(a)
+    b = str(b)
+    print('El producto de ' + a + ' y ' + b + ' es:')
+    a = int(a)
+    b = int(b)
     result = a * b
     print(result)
 
 def dividir(a, b):
-    print('La división de' + a + ' y ' + b + ' es:')
+    a = str(a)
+    b = str(b)
+    print('La división de ' + a + ' y ' + b + ' es:')
+    a = int(a)
+    b = int(b)
     result = a / b
     print(result)
 
@@ -68,9 +84,9 @@ if opcion == '1':
     sumar(n1, n2)
 elif opcion == '2':
     restar(n1, n2)
-elif opcion == '2':
+elif opcion == '3':
     multiplicar(n1, n2)
-elif opcion == '2':
+elif opcion == '4':
     dividir(n1, n2)
 else:
     print("Elige una opción correcta !!")
